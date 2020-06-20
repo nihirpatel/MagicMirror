@@ -36,6 +36,15 @@ var config = {
 
 	modules: [
 		{
+			module: 'MMM-aviationwx',
+			header: 'Aviation Weather',
+			position: 'top_right',
+			config: {
+				airports: 'MIA, TPA, MCO', // 3-char or 4-char codes, U.S. only
+				updateInterval: 10, // update interval in minutes
+			}
+		},
+		{
 			module: "alert",
 		},
 		{
